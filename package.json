@@ -2,7 +2,7 @@
   "name": "hunick",
   "displayName": "Hunick",
   "description": "Syntax highlighting for the Hunick programming language",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
