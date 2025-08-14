@@ -1,25 +1,36 @@
 {
-  "name": "hk",
-  "displayName": "hunick-language",
-  "description": "syntax hightlighting for hunick",
+  "name": "hunick",
+  "displayName": "Hunick",
+  "description": "Syntax highlighting for the Hunick programming language",
   "version": "0.0.1",
+  "publisher": "eduardohiguti",
   "engines": {
-    "vscode": "^1.103.0"
+    "vscode": "^1.80.0"
   },
-  "categories": [
-    "Programming Languages"
-  ],
+  "categories": ["Programming Languages"],
   "contributes": {
-    "languages": [{
-      "id": "hunick",
-      "aliases": ["Hunick", "hunick"],
-      "extensions": [".hk"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "hunick",
-      "scopeName": "source.hunick",
-      "path": "./syntaxes/hunick.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "hunick",
+        "aliases": ["Hunick", "hunick"],
+        "extensions": [".hk"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hunick",
+        "scopeName": "source.hunick",
+        "path": "./syntaxes/hunick.tmLanguage.json"
+      }
+    ],
+    "themes": [
+  {
+    "label": "Hunick Theme",
+    "uiTheme": "vs-dark",
+    "path": "./themes/hunick-color-theme.json"
+  }
+]
+
   }
 }

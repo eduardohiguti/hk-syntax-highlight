@@ -3,21 +3,67 @@
 	"name": "Hunick",
 	"patterns": [
 	  {
-		"name": "keyword.control.hunick",
-		"match": "\\b(if|else|while|for|return)\\b"
+		"name": "comment.line.double-slash.hunick",
+		"match": "//.*$"
 	  },
 	  {
-		"name": "constant.numeric.hunick",
-		"match": "\\b\\d+\\b"
+		"name": "comment.block.hunick",
+		"begin": "/\\*",
+		"end": "\\*/"
 	  },
 	  {
 		"name": "string.quoted.double.hunick",
 		"begin": "\"",
-		"end": "\""
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.hunick",
+			"match": "\\\\."
+		  }
+		]
 	  },
 	  {
-		"name": "comment.line.double-slash.hunick",
-		"match": "//.*$"
+		"name": "string.quoted.single.hunick",
+		"begin": "'",
+		"end": "'",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.hunick",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  {
+		"name": "constant.numeric.hunick",
+		"match": "\\b\\d+(\\.\\d+)?\\b"
+	  },
+	  {
+		"name": "keyword.control.hunick",
+		"match": "\\b(if|else|while|for|return|break|continue)\\b"
+	  },
+	  {
+		"name": "storage.type.hunick",
+		"match": "\\b(int|float|bool|string|void)\\b"
+	  },
+	  {
+		"name": "constant.language.hunick",
+		"match": "\\b(true|false|null)\\b"
+	  },
+	  {
+		"name": "keyword.operator.hunick",
+		"match": "\\+\\+|--|==|!=|<=|>=|&&|\\|\\||\\+=|-=|\\*=|/=|%=|[=+\\-*/<>!]"
+	  },
+	  {
+		"name": "support.function.hunick",
+		"match": "\\b(print|len|input)\\b"
+	  },
+	  {
+		"name": "entity.name.function.hunick",
+		"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\()"
+	  },
+	  {
+		"name": "variable.other.hunick",
+		"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
 	  }
 	]
   }
