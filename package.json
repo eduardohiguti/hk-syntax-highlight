@@ -1,0 +1,25 @@
+{
+  "name": "hk",
+  "displayName": "hunick-language",
+  "description": "syntax hightlighting for hunick",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hunick",
+      "aliases": ["Hunick", "hunick"],
+      "extensions": [".hk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hunick",
+      "scopeName": "source.hunick",
+      "path": "./syntaxes/hunick.tmLanguage.json"
+    }]
+  }
+}

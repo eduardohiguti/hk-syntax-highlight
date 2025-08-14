@@ -1,0 +1,24 @@
+{
+	"scopeName": "source.hunick",
+	"name": "Hunick",
+	"patterns": [
+	  {
+		"name": "keyword.control.hunick",
+		"match": "\\b(if|else|while|for|return)\\b"
+	  },
+	  {
+		"name": "constant.numeric.hunick",
+		"match": "\\b\\d+\\b"
+	  },
+	  {
+		"name": "string.quoted.double.hunick",
+		"begin": "\"",
+		"end": "\""
+	  },
+	  {
+		"name": "comment.line.double-slash.hunick",
+		"match": "//.*$"
+	  }
+	]
+  }
+  
