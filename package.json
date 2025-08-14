@@ -3,6 +3,10 @@
   "displayName": "Hunick",
   "description": "Syntax highlighting for the Hunick programming language",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduardohiguti/hk-syntax-highlight"
+  },
   "publisher": "eduardohiguti",
   "engines": {
     "vscode": "^1.80.0"
