@@ -23,14 +23,6 @@
         "scopeName": "source.hunick",
         "path": "./syntaxes/hunick.tmLanguage.json"
       }
-    ],
-    "themes": [
-  {
-    "label": "Hunick Theme",
-    "uiTheme": "vs-dark",
-    "path": "./themes/hunick-color-theme.json"
-  }
-]
-
+    ]
   }
 }
